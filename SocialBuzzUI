@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyword Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .container h1 {
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="checkbox"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-group input[type="checkbox"] {
+            width: auto;
+        }
+        .form-group .options {
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-group .options label {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .options label input {
+            margin-right: 5px;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Keyword Search</h1>
+        <form id="searchForm">
+            <div class="form-group">
+                <label for="keyword">Keyword:</label>
+                <input type="text" id="keyword" name="keyword" required>
+            </div>
+            <div class="form-group options">
+                <label>
+                    <input type="checkbox" name="platform" value="Twitter"> Twitter
+                </label>
+                <label>
+                    <input type="checkbox" name="platform" value="Reddit"> Reddit
+                </label>
+                <label>
+                    <input type="checkbox" name="platform" value="LinkedIn"> LinkedIn
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
